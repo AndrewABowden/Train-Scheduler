@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Train Schedule Calculator</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+<div class="container">
+        <div class="header text-center clearfix">
+                <h1>Anytime is train time. Choo Choo</h1>
+              <!--  <img src="assets/images/starwars-trivia.png" /> -->
+              </div>
+    <div class="content">
+        <section id="data-table">
+            <div class="container">
+                <div class="row">
+                    <table class="table table-bordered table striped">
+                        <h4>Train Time Calculator </h4>
+                       
+                        <thead>
+                            <tr>
+                                <th>Train name</th>
+                                <th>Destination</th>
+                                <th>Frequency (mins)</th>
+                                <th>Next Arrival (am/pm) </th>
+                                <th>Minutes Away</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="data"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <form class="myForm">
+                        <div class="form-group">
+                            <h5> Add Train</h5>
+                            <label for="newTrainName">Train Name</label>
+                            <input type="text" class="form-control" id="trainName" placeholder="Name"></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" class="form-control" id="destination" placeholder="Destination"></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstTrain">First Train Time (hh:mm [am or pm])</label>
+                            <input type="text" class="form-control" id="time" placeholder="First Train Time"></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="frequency">Frequency (minutes)</label>
+                            <input type="text" class="form-control" id="frequency" placeholder="Frequency"></input>
+                        </div>
+                        <button id="submit" type="submit" class="btn btn-danger flat-btn">Submit</button>
+                        <button id="clearBtn" type="submit" class="btn btn-danger flat-btn">Clear</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+ 
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+<script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+
+.table th {
+    background-color: whitesmoke;
+}
+.table td {
+    background-color: whitesmoke;
+}
+.text-center {
+    color: whitesmoke
+}
+
+body {
+    background-image: url("https://www.setaswall.com/wp-content/uploads/2017/07/Railroad-Background-17-1920x1080.jpg");
+    color: darkred;
+}
+.header{
+    background-color: maroon;
+    padding: 20px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
